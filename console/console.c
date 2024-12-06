@@ -1,8 +1,8 @@
 // setup basic terminal. commentated example:
 // https://github.com/devkitPro/gamecube-examples/blob/master/devices/dvd/readsector/source/dvd.c
 #include "console.h"
-GXRModeObj* _vMode;
-void* _fb;
+static GXRModeObj* _vMode;
+static void* _fb;
 
 // video management
 

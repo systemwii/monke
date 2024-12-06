@@ -1,4 +1,6 @@
-// a basic terminal output
+#pragma once
+#pragma GCC visibility push(hidden)
+
 #include <stdio.h>
 #include <gccore.h>
 
@@ -32,3 +34,5 @@ void consoleClear(void);        // clears console (alternative to printf(CON_CLE
 #define CON_BGWHITE(str)	"\x1b[47;1m" str "\x1b[40m"
 
 #define CON_CLEAR			"\x1b[2J" // signal text to clear console
+
+#pragma GCC visibility pop
