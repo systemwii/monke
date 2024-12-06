@@ -17,13 +17,13 @@ void consoleClear(void);        // clears console (alternative to printf(CON_CLE
 // e.g. videoClear(COLOR_RED); printf("\x1b[31;1m");
 
 // text colours
-#define CON_BLACK(str)		"\x1b[30m" str "\x1b[37m"
-#define CON_RED(str)		"\x1b[31;1m" str "\x1b[37m"
-#define CON_GREEN(str)		"\x1b[32;1m" str "\x1b[37m"
-#define CON_YELLOW(str)		"\x1b[33;1m" str "\x1b[37m"
-#define CON_BLUE(str)		"\x1b[34;1m" str "\x1b[37m"
-#define CON_MAGENTA(str)	"\x1b[35;1m" str "\x1b[37m"
-#define CON_CYAN(str)		"\x1b[36;1m" str "\x1b[37m"
+#define CON_BLACK(str)		"\x1b[30m" str "\x1b[37;1m"
+#define CON_RED(str)		"\x1b[31;1m" str "\x1b[37;1m"
+#define CON_GREEN(str)		"\x1b[32;1m" str "\x1b[37;1m"
+#define CON_YELLOW(str)		"\x1b[33;1m" str "\x1b[37;1m"
+#define CON_BLUE(str)		"\x1b[34;1m" str "\x1b[37;1m"
+#define CON_MAGENTA(str)	"\x1b[35;1m" str "\x1b[37;1m"
+#define CON_CYAN(str)		"\x1b[36;1m" str "\x1b[37;1m"
 // background colours
 #define CON_BGRED(str)		"\x1b[41;1m" str "\x1b[40m"
 #define CON_BGGREEN(str)	"\x1b[42;1m" str "\x1b[40m"
